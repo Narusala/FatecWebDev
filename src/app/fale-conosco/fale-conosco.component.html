@@ -1,6 +1,7 @@
 <h3>Fale Conosco</h3>
 <form>
-    nome: <input type="text" id="nome" required placeholder="Informe seu nome completo!"><br>
+    nome: <input type="text" id="nome" required placeholder="Informe seu nome completo!"
+    pattern="[A-z\s]{6,100}"><br>
     email: <input type="email" id="email" required placeholder="Informe seu email!"><br>
     idade: <input type="number" id="idade" min="16" max="100" required placeholder="Informe sua idade!"><br>
     assunto: <select id="assunto">
@@ -9,10 +10,17 @@
         <option>Sobre seu cadastro</option>
         <option>Reclamações e dúvidas</option>
     </select><br>
-    telefone: <input type="tel" id="telefone" required placeholder="Informe seu telefone!"><br>
-    mensagem: <textarea id="mensagem" rows="5" cols="50"></textarea><br>
+    telefone: <input type="text" id="telefone" required placeholder="Informe seu telefone!" pattern="[o-9]{4,5}-[0-9]{4}"><br>
+    mensagem: <textarea id="mensagem" rows="5" cols="50" required pattern="[\w]{10,4000}"></textarea><br>
     deseja receber uma cópia desse email:
         <input type="radio" id="RecebeSim" name="copia">Sim
         <input type="radio" id="RecebeNao" name="copia">Não<br>
+    quais as formas de contato você autoriza:<br>
+        <input type="checkbox" id="contatoEmail" checked> email
+        <input type="checkbox" id="contatoTelefone"> telefone
+        <input type="checkbox" id="contatoWhatsapp"> Whatsapp
+        <input type="checkbox" id="contatoCarta"> carta<br>
+    qual a nota que você dá para a nossa loja:<br>
+        <input type="range" id="nota" min="0" max="5" step="1"><br>
     <button>Enviar</button>
 </form>
