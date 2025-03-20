@@ -7,7 +7,7 @@ import { ClienteComponent } from './cliente/cliente.component';
 
 
 export const routes: Routes = [
-    {path: "faleconosco", component: FaleConoscoComponent},
+    {path: "fale-conosco", component: FaleConoscoComponent},
     {path: "contato", redirectTo: "faleconosco"},
     {path: "vitrine", component: VitrineComponent},
     {path: "", component: VitrineComponent},
