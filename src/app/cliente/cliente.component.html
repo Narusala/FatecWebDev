@@ -1,13 +1,25 @@
-<h3>Cadastro de cliente</h3>
-<form>
-    Codigo: <input type="text" required><br>
-    Nome: <input type="text" required><br>
-    Email: <input type="email" required><br>
-    Telefone: <input type="tel" required><br>
-    Documento: <input type="text" required><br>
-    Endereço: <textarea rows="5" cols="50" required></textarea><br>
-    Senha: <input type="password" required><br>
-    Confirmação de senha: <input type="password" required><br>
-    <input type="checkbox"> Autorizo o envio de mensagem e ofertas<br>
-    <button>Gravar</button>
-</form>
+<div class="modal-content rounded-4 shadow">
+    <div class="modal-header p-5 pb-4 border-bottom-0">
+      <h1 class="fw-bold mb-0 fs-2">Cadastre-se</h1>
+    </div>
+
+    <div class="modal-body p-5 pt-0">
+      <form class="">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Senha</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Confirmar Senha</label>
+        </div>
+        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Cadastrar</button>
+        <!-- <small class="text-body-secondary">Ao clicar cadastrar, you agree to the terms of use.</small> -->
+        <hr class="my-4">
+      </form>
+    </div>
+  </div>
