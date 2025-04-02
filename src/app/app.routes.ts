@@ -4,7 +4,7 @@ import { VitrineComponent } from './vitrine/vitrine.component';
 import { LoginComponent } from './login/login.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-
+import { DetalheComponent } from './detalhe/detalhe.component'
 
 
 export const routes: Routes = [
@@ -14,6 +14,7 @@ export const routes: Routes = [
     {path: "", component: VitrineComponent},
     {path: "login", component: LoginComponent},
     {path: "cliente", component: ClienteComponent},
-    {path: "checkout", component: CheckoutComponent}
+    {path: "checkout", component: CheckoutComponent},
+    {path: "detalhe", component: DetalheComponent},
 
 ];

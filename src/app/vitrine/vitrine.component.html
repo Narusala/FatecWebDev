@@ -1,26 +1,19 @@
 <h6>Vitrine</h6>
+<div class="alert alert-info" *ngIf="mensagem.length>0">{{mensagem}}</div>
 <div class="row">
-  <div class="col-md-4 col-sm-12">Produto 1</div>
-  <div class="col-md-4 col-sm-12">Produto 2</div>
-  <div class="col-md-4 col-sm-12">Produto 3</div>
-</div>
-<div class="row">
-  <div class="col-md-4 col-sm-12">Produto 4</div>
-  <div class="col-md-4 col-sm-12">Produto 5</div>
-  <div class="col-md-4 col-sm-12">Produto 6</div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="Furadeira.jpg" height="" class="card-img-top" alt="Furadeira">
-  <div class="card-body">
-    <h5 class="card-title">Furadeira</h5>
-    <p class="card-text">Furadeira elétrica</p>
-    <a href="#" class="btn btn-primary" 
-    data-bs-toggle="modal" data-bs-target="#myModal">
-    + informações
-    </a>
+  <div class="col-md-4 col-sm-12"*ngFor="let obj of produtos">
+    <div class="card" style="width: 18rem;">
+      <img src="Produto{{obj.codigo}}.jpg" height="" class="card-img-top" alt="Furadeira">
+      <div class="card-body">
+        <h4 class="card-title">{{obj.nome}}</h4>
+        <p class="card-text">{{obj.descritivo}}</p>
+        <div *ngIf="obj.quantidade>0">R$ {{obj.valor}}</div>
+        <button class="btn btn-primary" (click)="detalhes(obj);">
+        + informações
+        </button>
+      </div>
+    </div>
   </div>
-</div>
 
 <div class="modal" id="myModal" tabindex="-1">
   <div class="modal-dialog">
