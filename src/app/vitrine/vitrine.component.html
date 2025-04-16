@@ -1,7 +1,7 @@
 <div class="alert alert-info" *ngIf="mensagem.length>0">{{mensagem}}</div>
 <div class="row mx-auto">
   <h6>Vitrine</h6>
-  <div class="col-md-4 col-sm-12"*ngFor="let obj of produtos">
+  <div class="col-md-6 col-lg-4 col-sm-8 mb-3"*ngFor="let obj of produtos">
     <div class="card" style="width: 18rem;">
       <img src="Produto{{obj.codigo}}.jpg" class="card-img-top mx-auto mt-3" alt="{{obj.nome}}">
       <div class="card-body">
