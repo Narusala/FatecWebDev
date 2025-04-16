@@ -3,7 +3,7 @@
   <h6>Vitrine</h6>
   <div class="col-md-4 col-sm-12"*ngFor="let obj of produtos">
     <div class="card" style="width: 18rem;">
-      <img src="Produto{{obj.codigo}}.jpg" height="" class="card-img-top" alt="Furadeira">
+      <img src="Produto{{obj.codigo}}.jpg" class="card-img-top mx-auto mt-3" alt="{{obj.nome}}">
       <div class="card-body">
         <h4 class="card-title">{{obj.nome}}</h4>
         <p class="card-text">{{obj.descritivo}}</p>
