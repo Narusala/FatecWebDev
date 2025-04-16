@@ -11,12 +11,12 @@ import {CommonModule} from '@angular/common';
 })
 export class VitrineComponent {
   public mensagem: String = "";
-  public produtos: Produto[] = [{"codigo": 1, "nome": "Furadeira", 
-  "valor": 100, "quantidade": 100, "descritivo":"furadeira eletrica bivolt"},
-  {"codigo": 2, "nome": "Serra Marmore", 
-  "valor": 110, "quantidade": 15, "descritivo":"Serra Marmore eletrica"},
-  {"codigo": 3, "nome": "Parafusadeira", 
-  "valor": 180, "quantidade": 0, "descritivo":"furadeira eletrica bivolt"}]
+  public produtos: Produto[] = [{"codigo": 1, "nome": "Atari", 
+  "valor": 400, "quantidade": 10, "descritivo":"Console Atari"},
+  {"codigo": 2, "nome": "Super Nintendo", 
+  "valor": 350, "quantidade": 5, "descritivo":"Console Super Nintendo"},
+  {"codigo": 3, "nome": "Master System II", 
+  "valor": 1000, "quantidade": 0, "descritivo":"Master System II Completo"}]
 
   public detalhes(obj: Produto){
     localStorage.setItem("produto", JSON.stringify(obj));

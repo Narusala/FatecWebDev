@@ -1,4 +1,16 @@
-<div class="alert alert-warning">{{mensagem}}</div>
-<h4>{{obj.nome}}</h4>
-<img src="Produto{{obj.codigo}}.jpg">
-<br>
+<div class="card mx-auto mt-5" style=" max-width: 1000px;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="Produto{{ obj.codigo }}.jpg" class="img-fluid rounded-start" alt="{{ obj.nome }}">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">{{ obj.nome }}</h5>
+          <p class="card-text">{{ obj.descritivo }}</p>
+        </div>
+        <button class="btn btn-secondary mt-2">
+            Adicionar ao carrinho
+          </button>
+      </div>
+    </div>
+  </div>
